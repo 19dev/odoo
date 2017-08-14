@@ -1,3 +1,23 @@
+```sh
+git clone https://github.com/odoo/odoo.git
+
+sudo su - postgres -c "createuser -s $USER"
+
+sudo apt-get install libsasl2-dev python-dev libldap2-dev libssl-dev
+pip install -r requirements.txt
+
+> In later debian (>jessie) and ubuntu (>14.04) you may need to add a symlink as npm packages call node but debian calls the binary nodejs
+$ apt-get install -y npm
+$ sudo ln -s /usr/bin/nodejs /usr/bin/node
+
+$ sudo npm install -g less
+```
+
+Kaynaklar
+1. https://www.odoo.com/documentation/10.0/setup/install.html
+
+# Orginal
+
 [![Build Status](http://runbot.odoo.com/runbot/badge/flat/1/10.0.svg)](http://runbot.odoo.com/runbot)
 [![Tech Doc](http://img.shields.io/badge/10.0-docs-875A7B.svg?style=flat)](http://www.odoo.com/documentation/10.0)
 [![Help](http://img.shields.io/badge/10.0-help-875A7B.svg?style=flat)](https://www.odoo.com/forum/help-1)
