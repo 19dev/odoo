@@ -11,7 +11,13 @@ $ apt-get install -y npm
 $ sudo ln -s /usr/bin/nodejs /usr/bin/node
 
 $ sudo npm install -g less
+
+$ ./odoo-bin
 ```
+
+Test: http://localhost:8069/
+
+Bad Request: Session expired (invalid CSRF token) hatası alıyoruz
 
 Kaynaklar
 1. https://www.odoo.com/documentation/10.0/setup/install.html
