@@ -19,6 +19,11 @@ Test: http://localhost:8069/
 
 Bad Request: Session expired (invalid CSRF token) hatası alıyoruz
 
+```sh
+2017-08-14 07:06:47,711 13718 WARNING xxx odoo.http: CSRF validation failed on path '/web/login'
+2017-08-14 07:06:47,712 13718 INFO xxx werkzeug: 127.0.0.1 - - [14/Aug/2017 07:06:47] "POST /web/login HTTP/1.1" 400 -
+```
+
 Kaynaklar
 1. https://www.odoo.com/documentation/10.0/setup/install.html
 
